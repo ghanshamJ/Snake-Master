@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snake Master</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- *******************************style***************************************************-->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      canvas {
+        background: rgb(163, 131, 131);
+        display: block;
+        margin: 0 auto;
+      }
+
+      body {
+        background-color: rgb(99, 109, 112);
+      }
+      .btnPlay {
+        background-color: rgb(255, 255, 255);
+        color: rgb(15, 5, 105);
+        height: 40px;
+        width: 100px;
+        font-size: 20px;
+        margin-top: 50px;
+      }
+      .div1 {
+        background-color: rgb(99, 109, 112);
+        margin-top: 20%;
+        height: 100px;
+      }
+      #level {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+      }
+      #gameTitle {
+        color: white;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 1cm;
+        font-weight: bolder;
+      }
+    </style>
+    <!-- *******************************js files***************************************************-->
+    <script src="js_snake\button.js"></script>
+    <script src="js_snake\food.js"></script>
+    <script src="js_snake\obstacle.js"></script>
+    <script src="js_snake\level.js"></script>
+    <script src="js_snake\context.js"></script>
+    <script src="js_snake\main.js"></script>
+    <script src="js_snake\snake.js"></script>
+    <!-- *****************************************************************************************-->
+  </head>
+  <body>
+    <center>
+      <div id="div1">
+        <center>
+          <span id="gameTitle">Snake Master</span>
+          <br />
+          <br />
+          <select id="level">
+            <option value="0">Select Level</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+          <br />
+          <button id="btnPlay" class="btnPlay" onclick="init();">
+            <b>Play</b>
+          </button>
+        </center>
+      </div>
+    </center>
+    <!-- *******************************Canvas*********************************************************-->
+    <canvas id="myCanvas" style="display: none"></canvas>
+  </body>
+</html>
